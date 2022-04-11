@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Тестовое задание</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.6.0/sockjs.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body onload="connect()" onclose="disconnect()">
+<div>
+    <label for="array_lenght">Введите длину массива</label>
+    <input type="number" id="array_lenght">
+    <button id="send" type="submit">Сформировать</button>
+    <div>
+        <button id="auto_generate" type="submit">Авто</button>
+        <button id="manual_generate" type="submit">Сгенерировать</button>
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <th>Массивы</th>
+        </tr>
+        </thead>
+        <tbody id="arrays">
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
